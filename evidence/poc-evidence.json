@@ -1,0 +1,186 @@
+[
+  {
+    "step": "PUT member -> isLeagueManager=true",
+    "status": 200,
+    "request": {
+      "displayName": "ESPNFAN0000000001",
+      "firstName": "REDACTED",
+      "id": "{REDACTED_SWID}",
+      "isLeagueManager": true,
+      "lastName": "C",
+      "notificationSettings": [
+        {
+          "enabled": true,
+          "forId": 2,
+          "id": "299f0c39-8d0c-3e1f-9d54-dde72a04b3b5",
+          "type": "TEAM_PLAYER_INJURY"
+        },
+        {
+          "enabled": true,
+          "forId": 2,
+          "id": "2a920f75-abf3-3762-a928-c6234ca92b4a",
+          "type": "TEAM_PLAYER_AVAILABILITY"
+        },
+        {
+          "enabled": true,
+          "forId": 2,
+          "id": "cc9d70b5-93f5-3871-87f4-2abbd00f4991",
+          "type": "TEAM_PLAYER_NEWS"
+        },
+        {
+          "enabled": true,
+          "forId": 2,
+          "id": "acbbc374-6366-3bb0-bf95-0b1cbf7378d3",
+          "type": "TEAM_TRADE_OFFER"
+        },
+        {
+          "enabled": true,
+          "forId": 2,
+          "id": "f04bc2f5-a4fd-31a5-aa86-1919e00c9a4f",
+          "type": "DRAFT"
+        },
+        {
+          "enabled": true,
+          "forId": 2,
+          "id": "8752c262-d3ae-35a0-bc25-da15723494a5",
+          "type": "TEAM_MATCHUP_SCORE"
+        },
+        {
+          "enabled": true,
+          "forId": 2,
+          "id": "9d6d9070-4b3c-3ff3-9896-e9330022e6c9",
+          "type": "ACHIEVEMENT"
+        },
+        {
+          "enabled": true,
+          "forId": 2,
+          "id": "86f0315b-690c-31cc-9aa1-c3636ce1c128",
+          "type": "ADD_DROP"
+        },
+        {
+          "enabled": true,
+          "forId": 2,
+          "id": "b7d31661-b8ee-3269-b627-f1d823afb7fa",
+          "type": "WEEKLY_RECAP"
+        },
+        {
+          "enabled": true,
+          "forId": 2,
+          "id": "1673192a-d4f6-37bf-9c8a-63132a4e098a",
+          "type": "WAIVERS"
+        },
+        {
+          "enabled": false,
+          "forId": 2,
+          "id": "57a73337-9498-3a02-992f-c2149f5f6345",
+          "type": "TEAM_LIVE_ACTIVITY"
+        }
+      ]
+    },
+    "response": ""
+  },
+  {
+    "step": "TRADE_ACCEPT",
+    "status": 200,
+    "request": {
+      "type": "TRADE_ACCEPT",
+      "teamId": 2,
+      "memberId": "{REDACTED_SWID}",
+      "scoringPeriodId": 2,
+      "isActingAsTeamOwner": true,
+      "isLeagueManager": true,
+      "skipTransactionCounters": false,
+      "bidAmount": 0,
+      "comment": "",
+      "executionType": null,
+      "relatedTransactionId": "6a873220-54b7-43a3-a552-fa813b332eb1"
+    },
+    "response": "{\"bidAmount\":0,\"comment\":\"\",\"executionType\":\"EXECUTE\",\"id\":\"c69bf9ba-ab17-43fe-98cc-4cfbcb8afed7\",\"isActingAsTeamOwner\":true,\"isLeagueManager\":true,\"isPending\":false,\"memberId\":\"{REDACTED_SWID}\",\"proposedDate\":1792604971957,\"rating\":0,\"relatedTransactionId\":\"6a873220-54b7-43a3-a552-fa813b332eb1\",\"scoringPeriodId\":2,\"skipTransactionCounters\":false,\"subOrder\":0,\"teamId\":2,\"type\":\"TRADE_ACCEPT\"}"
+  },
+  {
+    "step": "PUT member -> restore",
+    "status": 200,
+    "request": {
+      "displayName": "ESPNFAN0000000001",
+      "firstName": "REDACTED",
+      "id": "{REDACTED_SWID}",
+      "isLeagueManager": false,
+      "lastName": "C",
+      "notificationSettings": [
+        {
+          "enabled": true,
+          "forId": 2,
+          "id": "299f0c39-8d0c-3e1f-9d54-dde72a04b3b5",
+          "type": "TEAM_PLAYER_INJURY"
+        },
+        {
+          "enabled": true,
+          "forId": 2,
+          "id": "2a920f75-abf3-3762-a928-c6234ca92b4a",
+          "type": "TEAM_PLAYER_AVAILABILITY"
+        },
+        {
+          "enabled": true,
+          "forId": 2,
+          "id": "cc9d70b5-93f5-3871-87f4-2abbd00f4991",
+          "type": "TEAM_PLAYER_NEWS"
+        },
+        {
+          "enabled": true,
+          "forId": 2,
+          "id": "acbbc374-6366-3bb0-bf95-0b1cbf7378d3",
+          "type": "TEAM_TRADE_OFFER"
+        },
+        {
+          "enabled": true,
+          "forId": 2,
+          "id": "f04bc2f5-a4fd-31a5-aa86-1919e00c9a4f",
+          "type": "DRAFT"
+        },
+        {
+          "enabled": true,
+          "forId": 2,
+          "id": "8752c262-d3ae-35a0-bc25-da15723494a5",
+          "type": "TEAM_MATCHUP_SCORE"
+        },
+        {
+          "enabled": true,
+          "forId": 2,
+          "id": "9d6d9070-4b3c-3ff3-9896-e9330022e6c9",
+          "type": "ACHIEVEMENT"
+        },
+        {
+          "enabled": true,
+          "forId": 2,
+          "id": "86f0315b-690c-31cc-9aa1-c3636ce1c128",
+          "type": "ADD_DROP"
+        },
+        {
+          "enabled": true,
+          "forId": 2,
+          "id": "b7d31661-b8ee-3269-b627-f1d823afb7fa",
+          "type": "WEEKLY_RECAP"
+        },
+        {
+          "enabled": true,
+          "forId": 2,
+          "id": "1673192a-d4f6-37bf-9c8a-63132a4e098a",
+          "type": "WAIVERS"
+        },
+        {
+          "enabled": false,
+          "forId": 2,
+          "id": "57a73337-9498-3a02-992f-c2149f5f6345",
+          "type": "TEAM_LIVE_ACTIVITY"
+        }
+      ]
+    },
+    "response": ""
+  },
+  {
+    "league": "642667711",
+    "escalated": true,
+    "restored_to": false,
+    "verdict": "reproduced"
+  }
+]

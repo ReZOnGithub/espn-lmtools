@@ -1,0 +1,141 @@
+{
+  "started": "2026-10-21T21:30:15.230273",
+  "baseline": {
+    "allowOutOfUniverse": false,
+    "deadlineDate": 1803056400000,
+    "max": -1,
+    "revisionHours": 24,
+    "vetoVotesRequired": 4
+  },
+  "polls": [
+    {
+      "at": "2026-10-21T21:58:02",
+      "status": "PENDING",
+      "pending": true
+    },
+    {
+      "at": "2026-10-21T21:58:12",
+      "status": "PENDING",
+      "pending": true
+    },
+    {
+      "at": "2026-10-21T21:58:23",
+      "status": "PENDING",
+      "pending": true
+    },
+    {
+      "at": "2026-10-21T21:58:34",
+      "status": "PENDING",
+      "pending": true
+    },
+    {
+      "at": "2026-10-21T21:58:44",
+      "status": "PENDING",
+      "pending": true
+    },
+    {
+      "at": "2026-10-21T21:58:54",
+      "status": "PENDING",
+      "pending": true
+    },
+    {
+      "at": "2026-10-21T21:59:05",
+      "status": "PENDING",
+      "pending": true
+    },
+    {
+      "at": "2026-10-21T21:59:16",
+      "status": "PENDING",
+      "pending": true
+    },
+    {
+      "at": "2026-10-21T21:59:26",
+      "status": "PENDING",
+      "pending": true
+    },
+    {
+      "at": "2026-10-21T21:59:37",
+      "status": "PENDING",
+      "pending": true
+    },
+    {
+      "at": "2026-10-21T21:59:48",
+      "status": "PENDING",
+      "pending": true
+    },
+    {
+      "at": "2026-10-21T21:59:58",
+      "status": "PENDING",
+      "pending": true
+    },
+    {
+      "at": "2026-10-21T22:00:09",
+      "status": "PENDING",
+      "pending": true
+    },
+    {
+      "at": "2026-10-21T22:00:20",
+      "status": "PENDING",
+      "pending": true
+    },
+    {
+      "at": "2026-10-21T22:00:30",
+      "status": "PENDING",
+      "pending": true
+    },
+    {
+      "at": "2026-10-21T22:00:41",
+      "status": "PENDING",
+      "pending": true
+    },
+    {
+      "at": "2026-10-21T22:00:51",
+      "status": "PENDING",
+      "pending": true
+    },
+    {
+      "at": "2026-10-21T22:01:02",
+      "status": "PENDING",
+      "pending": true
+    },
+    {
+      "at": "2026-10-21T22:01:13",
+      "status": "PENDING",
+      "pending": true
+    },
+    {
+      "at": "2026-10-21T22:01:24",
+      "status": "PENDING",
+      "pending": true
+    },
+    {
+      "at": "2026-10-21T22:01:34",
+      "status": "PENDING",
+      "pending": true
+    },
+    {
+      "at": "2026-10-21T22:01:45",
+      "status": "PENDING",
+      "pending": true
+    },
+    {
+      "at": "2026-10-21T22:01:55",
+      "status": "PENDING",
+      "pending": true
+    }
+  ],
+  "executed": false,
+  "restored": true,
+  "error": null,
+  "final": {
+    "proposal_status": "PENDING",
+    "is_pending": true,
+    "team4_has_brunson": false,
+    "team4_has_pj": false,
+    "team6_has_derozan": false,
+    "team6_has_randle": false,
+    "display_name": "REDACTED",
+    "is_lm": false,
+    "revision_hours": 24
+  }
+}

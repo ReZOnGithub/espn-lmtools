@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "espn-lmtools"
+version = "0.1.0"
+description = "ESPN Fantasy League Manager escalation toolkit with CLI and web UI"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["requests>=2.31"]
+
+[project.optional-dependencies]
+harvest = ["playwright>=1.40"]
+dev = ["pytest>=8"]
+
+[project.scripts]
+espn-lmtools = "espn_lmtools.cli.lm_tools:main"
+espn-lm = "espn_lmtools.cli.lm_tools:main"
+espn-accept-trade = "espn_lmtools.cli.accept_trade:main"
+espn-trade-poc = "espn_lmtools.cli.trade_poc:main"
+espn-trade-probe = "espn_lmtools.cli.trade_probe:main"
+espn-cookie-harvest = "espn_lmtools.cli.cookie_harvest:main"
+espn-open-browser = "espn_lmtools.cli.open_browser:main"
+espn-dashboard = "espn_lmtools.dashboard.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+espn_lmtools = ["web/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]
+

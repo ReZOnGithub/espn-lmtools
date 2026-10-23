@@ -1,0 +1,20 @@
+[
+  {
+    "label": "A non-LM, body says LM",
+    "body_flag": true,
+    "status": 401,
+    "response": "{\"messages\":[\"This action can only be performed by the League Manager.\"],\"details\":[{\"message\":\"This action can only be performed by the League Manager.\",\"shortMessage\":\"This action can only be performed by the League Manager.\",\"resolution\":null,\"type\":\"AUTH_NOT_LEAGUE_MANAGER\",\"metaData\":null}]}"
+  },
+  {
+    "label": "B promoted, body says NOT LM",
+    "body_flag": false,
+    "status": 200,
+    "response": "{\"bidAmount\":0,\"comment\":\"\",\"executionType\":\"EXECUTE\",\"id\":\"d4228852-51e8-465c-b050-1abc707c5cbd\",\"isActingAsTeamOwner\":true,\"isLeagueManager\":false,\"isPending\":false,\"memberId\":\"{REDACTED_SWID}\",\"proposedDate\":1792604593996,\"rating\":0,\"relatedTransactionId\":\"20fde6b2-ec58-476"
+  },
+  {
+    "label": "C reverted, body says LM",
+    "body_flag": true,
+    "status": 401,
+    "response": "{\"messages\":[\"This action can only be performed by the League Manager.\"],\"details\":[{\"message\":\"This action can only be performed by the League Manager.\",\"shortMessage\":\"This action can only be performed by the League Manager.\",\"resolution\":null,\"type\":\"AUTH_NOT_LEAGUE_MANAGER\",\"metaData\":null}]}"
+  }
+]

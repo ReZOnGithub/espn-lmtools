@@ -1,0 +1,1262 @@
+{
+  "started": "2026-10-21T22:35:06.949057",
+  "baseline": {
+    "allowOutOfUniverse": false,
+    "deadlineDate": 1803056400000,
+    "max": -1,
+    "revisionHours": 24,
+    "vetoVotesRequired": 4
+  },
+  "polls": [
+    {
+      "at": "2026-10-21T22:35:08",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:35:29",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:35:49",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:36:10",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:36:30",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:36:51",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:37:11",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:37:32",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:37:52",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:38:12",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:38:33",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:38:53",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:39:14",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:39:35",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:39:55",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:40:15",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:40:36",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:40:56",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:41:17",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:41:37",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:41:57",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:42:18",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:42:38",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:42:59",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:43:19",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:43:39",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:44:00",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:44:20",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:44:41",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:45:01",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:45:22",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:45:42",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:46:03",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:46:23",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:46:44",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:47:04",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:47:24",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:47:45",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:48:05",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:48:26",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:48:46",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:49:07",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:49:27",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:49:47",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:50:08",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:50:28",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:50:49",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:51:09",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:51:30",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:51:50",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:52:10",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:52:31",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:52:51",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:53:12",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:53:32",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:53:53",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:54:13",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:54:33",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:54:54",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:55:14",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:55:35",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:55:55",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:56:15",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:56:36",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:56:56",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:57:17",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:57:37",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:57:58",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:58:18",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:58:39",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:58:59",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:59:19",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T22:59:40",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:00:00",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:00:21",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:00:41",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:01:02",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:01:23",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:01:43",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:02:03",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:02:24",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:02:44",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:03:05",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:03:25",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:03:46",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:04:06",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:04:27",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:04:47",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:05:08",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:05:28",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:05:49",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:06:09",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:06:29",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:06:50",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:07:11",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:07:31",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:07:51",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:08:12",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:08:32",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:08:53",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:09:13",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:09:34",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:09:54",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:10:14",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:10:35",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:10:55",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:11:16",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:11:36",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:11:56",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:12:17",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:12:37",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:12:58",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:13:18",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:13:38",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:13:59",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:14:19",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:14:40",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:15:00",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:15:21",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:15:41",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:16:02",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:16:22",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:16:42",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:17:03",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:17:23",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:17:43",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:18:04",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:18:24",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:18:45",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:19:05",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:19:26",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:19:46",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:20:06",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:20:27",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:20:47",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:21:08",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:21:28",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:21:49",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:22:09",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:22:30",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:22:50",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:23:11",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:23:31",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:23:51",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:24:12",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:24:32",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:24:53",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:25:13",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:25:34",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:25:54",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:26:14",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:26:35",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:26:55",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:27:16",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:27:36",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:27:56",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:28:17",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:28:37",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:28:58",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:29:18",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:29:38",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:29:59",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:30:19",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:30:40",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:31:00",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:31:21",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:31:41",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:32:02",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:32:22",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:32:43",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:33:03",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:33:24",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:33:44",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:34:04",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:34:25",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:34:45",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    },
+    {
+      "at": "2026-10-21T23:35:06",
+      "proposal_status": "PENDING",
+      "is_pending": true,
+      "moved": false,
+      "revision_hours": 0
+    }
+  ],
+  "executed": false,
+  "restored": true,
+  "error": null,
+  "final": {
+    "proposal_status": "PENDING",
+    "is_pending": true,
+    "moved": false,
+    "revision_hours": 24,
+    "display_name": "REDACTED",
+    "is_lm": false
+  }
+}
