@@ -233,7 +233,7 @@ def build_player(entry, team_id, season, game, pro_map):
     slot_id = entry.get("lineupSlotId")
     slot_name = LINEUP_SLOTS.get(game, {}).get(slot_id)
     if slot_name is None:
-        slot_name = f"Slot {slot_id}" if slot_id is not None else "â€”"
+        slot_name = f"Slot {slot_id}" if slot_id is not None else "—"
 
     injury = (player.get("injuryStatus") or entry.get("injuryStatus") or "").upper()
     ownership = player.get("ownership") or {}
@@ -244,7 +244,7 @@ def build_player(entry, team_id, season, game, pro_map):
         "name": name,
         "initials": initials(name),
         "teamId": team_id,
-        "position": POSITIONS.get(game, {}).get(player.get("defaultPositionId"), "â€”"),
+        "position": POSITIONS.get(game, {}).get(player.get("defaultPositionId"), "—"),
         "positionId": player.get("defaultPositionId"),
         "proTeamId": player.get("proTeamId"),
         "proTeam": pro.get("abbrev") or "",
@@ -569,7 +569,7 @@ def build_activity(data, players_by_id, teams, game):
                 "kind": "trade",
                 "title": "Trade completed",
                 "subtitle": (
-                    f"{len(sides)} teams Â· "
+                    f"{len(sides)} teams · "
                     f"{sum(len(side['players']) for side in sides)} players"
                 ),
                 "date": max(family["dates"]) if family["dates"] else None,

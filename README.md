@@ -31,10 +31,10 @@ Python 3.10+.
 | command | purpose |
 |---|---|
 | `espn-lmtools` (alias `espn-lm`) | league toolkit: `info`, `members`, `teams`, `activity`, `escalate`, `deescalate`, `rename`, `accept-trade`, `drop`, `notify` |
-| `espn-trade-poc` | end-to-end chain: self-escalate â†’ propose â†’ accept â†’ restore |
+| `espn-trade-poc` | end-to-end chain: self-escalate → propose → accept → restore |
 | `espn-accept-trade` | list pending offers for one team and accept exactly one, matched by player name or trade id |
 | `espn-trade-probe` | replay a captured raw request under several sessions and diff status (generic IDOR probe) |
-| `espn-cookie-harvest` | browser login â†’ export `espn_s2` + `SWID` per account, optional `--join-url` |
+| `espn-cookie-harvest` | browser login → export `espn_s2` + `SWID` per account, optional `--join-url` |
 | `espn-open-browser` | open a persisted profile in a visible Chromium window |
 | `espn-dashboard` | local League Desk web UI on `127.0.0.1` |
 
@@ -100,14 +100,14 @@ tests/             unit tests for pure helpers
 
 | # | finding | status |
 |---|---|---|
-| 1 | `PUT /leagues/{id}/members/{ownSwid}` accepts `isLeagueManager: true` from the client â†’ any member becomes League Manager | **confirmed**, reportable |
+| 1 | `PUT /leagues/{id}/members/{ownSwid}` accepts `isLeagueManager: true` from the client → any member becomes League Manager | **confirmed**, reportable |
 | 2 | Escalated LM can accept trades referencing teams it does not own | confirmed |
 | 3 | Escalated LM can drop players from other teams (`ROSTER`/`DROP`) | confirmed |
 | 4 | Escalated LM can silence another member's notification settings | confirmed |
-| 5 | `displayName` is self-editable and not unique â†’ audit attribution spoofable | confirmed |
+| 5 | `displayName` is self-editable and not unique → audit attribution spoofable | confirmed |
 | 6 | `POST /invites/{inviteId}?memberId={swid}` seats an arbitrary SWID (create-only) | observed, low impact |
-| 7 | "Proposer can accept its own trade" as a standalone bug | **retracted** â€” LM-only; non-LM gets 401 |
-| 8 | "Privilege change is invisible to the league" | **retracted** â€” appears in Recent Activity as `Assigned/Revoked LM powers to {displayName}` |
+| 7 | "Proposer can accept its own trade" as a standalone bug | **retracted** — LM-only; non-LM gets 401 |
+| 8 | "Privilege change is invisible to the league" | **retracted** — appears in Recent Activity as `Assigned/Revoked LM powers to {displayName}` |
 | 9 | LM review queues an accepted trade by writing `TRADE_ACCEPT` with `executionType: PROCESS`, keyed to the original `acceptedDate`; `TRADE_UPHOLD` alone only records approval | **confirmed** |
 
 Finding 9 detail:
@@ -124,21 +124,21 @@ Finding 9 detail:
 
 ## Correctly enforced (negative results)
 
-- Non-LM editing another member â†’ `401 You are not authorized to edit this member`
-- Non-LM `isLeagueCreator` / `hasLimitedPrivileges` â†’ `401 System Administrator`
-- Non-LM `skipTransactionCounters` â†’ `409` even with the escalated flag
-- Non-LM editing another team (`updateTeam`, drop, waiver add) â†’ `401`
-- Non-LM `DELETE /invites/{id}`, `POST /draftDetail` â†’ `401`
-- Member `id` is not writable (body ignored); PUT to a non-member path â†’ `409`
+- Non-LM editing another member → `401 You are not authorized to edit this member`
+- Non-LM `isLeagueCreator` / `hasLimitedPrivileges` → `401 System Administrator`
+- Non-LM `skipTransactionCounters` → `409` even with the escalated flag
+- Non-LM editing another team (`updateTeam`, drop, waiver add) → `401`
+- Non-LM `DELETE /invites/{id}`, `POST /draftDetail` → `401`
+- Member `id` is not writable (body ignored); PUT to a non-member path → `409`
 - Creator removal: UI hides the control, force-click issues no request, `POST/PUT /teams/{id}`
-  with empty owners â†’ `400`
+  with empty owners → `400`
 
 ## Evidence
 
-- `evidence/hackerone-report.md` â€” full writeup
-- `evidence/poc-evidence.json` â€” escalation + trade chain
-- `evidence/lm-escalation-evidence.json` â€” privilege-flag control matrix
-- `evidence/review_tick_evidence.json`, `evidence/force_review_evidence.json` â€” review-window runs
+- `evidence/hackerone-report.md` — full writeup
+- `evidence/poc-evidence.json` — escalation + trade chain
+- `evidence/lm-escalation-evidence.json` — privilege-flag control matrix
+- `evidence/review_tick_evidence.json`, `evidence/force_review_evidence.json` — review-window runs
 
 Identifiers, display names, and session values have been redacted. Raw runs stay local
 and are not committed.

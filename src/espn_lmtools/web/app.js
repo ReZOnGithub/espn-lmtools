@@ -1,4 +1,4 @@
-﻿const LS = {
+const LS = {
   account: "leaguedesk.account",
   league: "leaguedesk.league",
   game: "leaguedesk.game",
@@ -79,17 +79,17 @@ function icon(name, cls = "") {
 }
 
 function fmt1(value) {
-  if (value === null || value === undefined || value === "" || Number.isNaN(Number(value))) return "â€”";
+  if (value === null || value === undefined || value === "" || Number.isNaN(Number(value))) return "—";
   return Number(value).toFixed(1);
 }
 
 function fmtInt(value) {
-  if (value === null || value === undefined || value === "") return "â€”";
+  if (value === null || value === undefined || value === "") return "—";
   return String(Math.round(Number(value)));
 }
 
 function pct(value) {
-  if (value === null || value === undefined) return "â€”";
+  if (value === null || value === undefined) return "—";
   return `${Number(value).toFixed(1)}%`;
 }
 
@@ -99,7 +99,7 @@ function initials(value) {
 }
 
 function timeAgo(ms) {
-  if (!ms) return "â€”";
+  if (!ms) return "—";
   const diff = Date.now() - Number(ms);
   if (diff < 0) return fmtDate(ms);
   const mins = Math.floor(diff / 60000);
@@ -113,7 +113,7 @@ function timeAgo(ms) {
 }
 
 function fmtDate(ms) {
-  if (!ms) return "â€”";
+  if (!ms) return "—";
   return new Date(Number(ms)).toLocaleString(undefined, {
     month: "short", day: "numeric", hour: "numeric", minute: "2-digit",
   });
@@ -430,7 +430,7 @@ function renderTopbar() {
   els.leagueSeason.textContent = league ? `Season ${league.seasonLabel}` : "";
   els.leagueWeek.textContent = league ? `Week ${league.week}` : "";
   els.topEyebrow.textContent = league
-    ? `${capitalize(league.sport)} Â· ${league.size} teams Â· ${data.account.name}`
+    ? `${capitalize(league.sport)} · ${league.size} teams · ${data.account.name}`
     : "League office";
 
   const count = data?.pendingTrades?.length || 0;
@@ -447,7 +447,7 @@ function renderSidebar() {
   if (!data) {
     els.sideLeague.innerHTML = `<span class="skeleton skeleton-line" style="width:70%"></span>`;
     els.teamList.innerHTML = "";
-    els.teamCount.textContent = "â€”";
+    els.teamCount.textContent = "—";
     return;
   }
 
@@ -457,7 +457,7 @@ function renderSidebar() {
     <div class="sl-meta">
       <span class="sl-dot"></span>
       <span>${esc(league.seasonLabel)}</span>
-      <span>Â·</span>
+      <span>·</span>
       <span>Week ${esc(league.week)}</span>
     </div>
   `;
@@ -482,7 +482,7 @@ function renderSidebar() {
         <span class="team-row-name">${esc(team.name)}</span>
         <span class="team-row-meta">
           ${team.record.wins}-${team.record.losses}
-          <span>Â·</span>
+          <span>·</span>
           ${team.totalPlayers} players
           ${team.isMine ? `<span class="team-row-you">YOU</span>` : ""}
         </span>
@@ -544,7 +544,7 @@ function renderRoster() {
     ${showPickBanner ? `
       <div class="pick-banner">
         ${icon("spark")}
-        <span>${pickCopy} â€” use the <b>+</b> button on a player card.</span>
+        <span>${pickCopy} — use the <b>+</b> button on a player card.</span>
         <button class="btn btn-sm btn-ghost" data-action="done-picking">Done</button>
       </div>` : ""}
     ${heroMarkup(team)}
@@ -573,7 +573,7 @@ function heroMarkup(team) {
       <div class="hero-main">
         <div class="hero-topline">
           ${isMine ? `<span class="badge accent">${icon("shield")} Your team</span>` : `<span class="badge">Owned by ${esc(team.owners.join(", "))}</span>`}
-          <span class="badge">Rank #${esc(team.rank ?? "â€”")}</span>
+          <span class="badge">Rank #${esc(team.rank ?? "—")}</span>
           ${team.waiverRank ? `<span class="badge">Waiver ${esc(team.waiverRank)}</span>` : ""}
         </div>
         <h1 class="hero-name">${esc(team.name)}</h1>
@@ -617,7 +617,7 @@ function heroMarkup(team) {
 }
 
 function toolbarMarkup(team) {
-  const positions = ["ALL", ...new Set(team.roster.map((p) => p.position).filter((p) => p && p !== "â€”"))];
+  const positions = ["ALL", ...new Set(team.roster.map((p) => p.position).filter((p) => p && p !== "—"))];
   const counts = team.roster.length;
   return `
     <div class="roster-toolbar">
@@ -631,13 +631,13 @@ function toolbarMarkup(team) {
         <select class="sort-select" aria-label="Sort players">
           <option value="depth" ${state.sort === "depth" ? "selected" : ""}>Depth chart</option>
           <option value="fppg" ${state.sort === "fppg" ? "selected" : ""}>Fantasy PPG</option>
-          <option value="name" ${state.sort === "name" ? "selected" : ""}>Name Aâ€“Z</option>
+          <option value="name" ${state.sort === "name" ? "selected" : ""}>Name A–Z</option>
           <option value="owned" ${state.sort === "owned" ? "selected" : ""}>Ownership</option>
         </select>
         ${icon("chevron")}
       </div>
       <div class="toolbar-spacer"></div>
-      <div class="toolbar-note">${counts} players Â· click a player for details</div>
+      <div class="toolbar-note">${counts} players · click a player for details</div>
     </div>
   `;
 }
@@ -692,7 +692,7 @@ function playerCard(player, showTeam = false) {
     ? `<span class="pc-injury" title="${esc(player.injuryStatus)}">${esc(shortInjury(player.injuryStatus))}</span>` : "";
   const meta = showTeam
     ? `${esc(teamName(player.teamId))}`
-    : `${esc(player.slot || "â€”")} Â· ${esc(player.proTeamName || player.proTeam || "")}`;
+    : `${esc(player.slot || "—")} · ${esc(player.proTeamName || player.proTeam || "")}`;
 
   return `
     <article class="player-card ${selected ? "is-selected" : ""} ${state.trade.open ? "is-pickable" : ""}"
@@ -702,7 +702,7 @@ function playerCard(player, showTeam = false) {
       <div class="pc-media">
         <span class="initials">${esc(player.initials)}</span>
         <img src="${esc(player.headshot)}" alt="${esc(player.name)}" loading="lazy" onerror="this.style.display='none'">
-        <span class="pc-pos">${esc(player.position || "â€”")}</span>
+        <span class="pc-pos">${esc(player.position || "—")}</span>
         ${injury}
         <span class="pc-team">${esc(player.proTeam || "FA")}</span>
         <button class="pc-add" data-action="toggle-trade" data-player="${player.id}"
@@ -736,7 +736,7 @@ function renderSearchResults() {
     <div class="section-head">
       <div>
         <h2>${icon("search")} Search results</h2>
-        <p>${hits.length} player${hits.length === 1 ? "" : "s"} across the league match â€œ${esc(state.search.trim())}â€.</p>
+        <p>${hits.length} player${hits.length === 1 ? "" : "s"} across the league match “${esc(state.search.trim())}”.</p>
       </div>
       <button class="btn btn-ghost btn-sm" data-action="clear-search">${icon("close")} Clear</button>
     </div>
@@ -767,19 +767,19 @@ function openPlayer(playerId) {
 
   const stats = player.statLine?.length ? `
     <div>
-      <div class="pm-section-title">Per game Â· ${esc(player.statsSeason || "season")}</div>
+      <div class="pm-section-title">Per game · ${esc(player.statsSeason || "season")}</div>
       <div class="stat-line">
         ${player.statLine.map((stat) => `<div class="stat-cell"><b>${esc(stat.value)}</b><span>${esc(stat.label)}</span></div>`).join("")}
       </div>
     </div>` : "";
 
   const details = [
-    ["Fantasy team", team?.name || "â€”"],
-    ["Lineup slot", player.slot || "â€”"],
-    ["Acquired", capitalize(player.acquisitionType || "â€”")],
-    ["ADP", player.ownership.adp ?? "â€”"],
-    ["Auction value", player.ownership.auction ?? "â€”"],
-    ["Ownership change", player.ownership.change != null ? `${player.ownership.change > 0 ? "+" : ""}${player.ownership.change}%` : "â€”"],
+    ["Fantasy team", team?.name || "—"],
+    ["Lineup slot", player.slot || "—"],
+    ["Acquired", capitalize(player.acquisitionType || "—")],
+    ["ADP", player.ownership.adp ?? "—"],
+    ["Auction value", player.ownership.auction ?? "—"],
+    ["Ownership change", player.ownership.change != null ? `${player.ownership.change > 0 ? "+" : ""}${player.ownership.change}%` : "—"],
   ];
 
   setModal(`
@@ -791,15 +791,15 @@ function openPlayer(playerId) {
       </div>
       <div class="pm-copy">
         <div class="pm-kicker">
-          <span class="badge accent">${esc(player.position || "â€”")}</span>
+          <span class="badge accent">${esc(player.position || "—")}</span>
           <span class="badge">${esc(player.proTeam || "Free agent")}</span>
           ${isMine ? `<span class="badge">Your roster</span>` : ""}
         </div>
         <h2 class="pm-name">${esc(player.name)}</h2>
         <div class="pm-meta">
-          <span>${esc(player.proTeamName || "â€”")}</span>
+          <span>${esc(player.proTeamName || "—")}</span>
           <span class="dot"></span>
-          <span>${esc(player.slot || "â€”")}</span>
+          <span>${esc(player.slot || "—")}</span>
           <span class="dot"></span>
           <span>${esc(team?.name || "")}</span>
         </div>
@@ -826,7 +826,7 @@ function openPlayer(playerId) {
         <div class="stat-tile">
           <div class="label">Last season</div>
           <div class="value">${fmt1(player.lastFppg)}<small>avg</small></div>
-          <div class="sub">${esc(player.statsSeason || "â€”")}</div>
+          <div class="sub">${esc(player.statsSeason || "—")}</div>
         </div>
       </div>
 
@@ -953,7 +953,7 @@ function renderTradePanel() {
     <div class="tp-head">
       <div>
         <h2>Trade builder</h2>
-        <p>Propose Â· review Â· send</p>
+        <p>Propose · review · send</p>
       </div>
       <button class="icon-btn" data-action="close-trade" aria-label="Close trade builder">${icon("close")}</button>
     </div>
@@ -989,7 +989,7 @@ function renderTradePanel() {
 
       <div class="tp-field tp-comment">
         <div class="tp-label">Message <span class="hint">optional</span></div>
-        <textarea id="tradeComment" maxlength="200" placeholder="Add a note to your offerâ€¦">${esc(state.trade.comment)}</textarea>
+        <textarea id="tradeComment" maxlength="200" placeholder="Add a note to your offer…">${esc(state.trade.comment)}</textarea>
       </div>
 
       ${state.lm ? `<div class="tp-note">${icon("shield")} <span>LM mode is armed. Proposals stay on your own team, so no escalation is needed to send this offer.</span></div>` : ""}
@@ -1012,7 +1012,7 @@ function sideMarkup(kind, kicker, team, players, value) {
           <img src="${esc(p.headshot)}" alt="" loading="lazy" onerror="this.style.display='none'">
           <span class="tp-player-copy">
             <span class="tp-player-name">${esc(p.name)}</span>
-            <span class="tp-player-meta">${esc(p.position)} Â· ${esc(p.proTeam || "â€”")}</span>
+            <span class="tp-player-meta">${esc(p.position)} · ${esc(p.proTeam || "—")}</span>
           </span>
           <span class="tp-player-val">${fmt1(p.fppg)}</span>
           <button class="tp-remove" data-action="remove-trade" data-side="${kind}" data-player="${p.id}" aria-label="Remove ${esc(p.name)}">${icon("close")}</button>
@@ -1090,7 +1090,7 @@ async function proposeTrade() {
   const button = $('[data-action="propose-trade"]');
   if (button) {
     button.disabled = true;
-    button.innerHTML = `${icon("clock")} Sendingâ€¦`;
+    button.innerHTML = `${icon("clock")} Sending…`;
   }
 
   try {
@@ -1176,7 +1176,7 @@ function openAcceptModal(tradeId, teamId = null) {
         ${icon("shield")}
         <span><strong>LM override required.</strong> The account will be promoted to League Manager, the accepting team's owner is used as the member, then the original flag is restored.</span>
       </div>
-      ${trade.direction === "outgoing" ? `<div class="callout">${icon("alert")} <span>This is your own proposal. Accepting it as the other team completes the loop without them acting â€” that's the bypass this toolkit already demonstrates.</span></div>` : ""}
+      ${trade.direction === "outgoing" ? `<div class="callout">${icon("alert")} <span>This is your own proposal. Accepting it as the other team completes the loop without them acting — that's the bypass this toolkit already demonstrates.</span></div>` : ""}
     </div>
     <div class="modal-foot">
       <button class="btn btn-ghost" data-action="close-modal">Cancel</button>
@@ -1207,7 +1207,7 @@ async function confirmAccept(tradeId) {
   const button = $('[data-action="confirm-accept"]');
   if (button) {
     button.disabled = true;
-    button.innerHTML = `${icon("clock")} Acceptingâ€¦`;
+    button.innerHTML = `${icon("clock")} Accepting…`;
   }
 
   try {
@@ -1264,7 +1264,7 @@ async function confirmCancel(tradeId) {
   const button = $('[data-action="confirm-cancel"]');
   if (button) {
     button.disabled = true;
-    button.innerHTML = `${icon("clock")} Cancellingâ€¦`;
+    button.innerHTML = `${icon("clock")} Cancelling…`;
   }
   try {
     const result = await api("/api/trade/cancel", {
@@ -1312,7 +1312,7 @@ function openDropModal(playerId) {
     <div class="modal-body">
       <div class="summary-line">
         <img src="${esc(player.headshot)}" alt="" style="width:38px;height:38px;border-radius:10px;object-fit:cover;object-position:top center;background:var(--img-bg)" onerror="this.style.display='none'">
-        <span class="grow"><b>${esc(player.name)}</b><br><span class="muted">${esc(player.position)} Â· ${esc(player.proTeam || "â€”")} Â· ${fmt1(player.fppg)} FPPG</span></span>
+        <span class="grow"><b>${esc(player.name)}</b><br><span class="muted">${esc(player.position)} · ${esc(player.proTeam || "—")} · ${fmt1(player.fppg)} FPPG</span></span>
         <span class="badge">${esc(team?.abbrev || "")}</span>
       </div>
       ${useLM ? `<div class="callout">${icon("shield")} <span><strong>LM override.</strong> Your account will be temporarily promoted to League Manager to drop from ${esc(team?.name || "another team")}, then restored.</span></div>` : ""}
@@ -1331,7 +1331,7 @@ async function confirmDrop(playerId, useLm) {
   const button = $('[data-action="confirm-drop"]');
   if (button) {
     button.disabled = true;
-    button.innerHTML = `${icon("clock")} Droppingâ€¦`;
+    button.innerHTML = `${icon("clock")} Dropping…`;
   }
   try {
     const result = await api("/api/drop", {
@@ -1434,7 +1434,7 @@ function tradeCard(trade) {
     : `${icon("clock")} ${timeAgo(trade.lastEventDate)}`;
 
   const statusCopy = trade.status === "processing"
-    ? `<span class="badge accent">Accepted â€” awaiting processing</span>`
+    ? `<span class="badge accent">Accepted — awaiting processing</span>`
     : "";
 
   return `
@@ -1444,7 +1444,7 @@ function tradeCard(trade) {
         <div class="trade-card-title">
           ${esc(directionLabel)}
           <span class="trade-direct ${dirClass}">${trade.direction === "incoming" ? "to you" : trade.direction === "outgoing" ? "from you" : "league"}</span>
-          <span class="muted">Â· ${esc(trade.proposerTeam)} proposed</span>
+          <span class="muted">· ${esc(trade.proposerTeam)} proposed</span>
         </div>
         ${statusCopy}
         <div class="trade-card-time">${timeLabel}</div>
@@ -1527,7 +1527,7 @@ function activityItem(item) {
   for (const side of item.sides || []) {
     for (const player of side.players || []) {
       const destination = player.toTeamId
-        ? `<span class="to">â†’ ${esc(teamAbbrev(player.toTeamId))}</span>`
+        ? `<span class="to">→ ${esc(teamAbbrev(player.toTeamId))}</span>`
         : player.fromTeamId ? `<span class="to">released</span>` : "";
       chips.push(`
         <span class="feed-chip">
@@ -1560,7 +1560,7 @@ function openSettings() {
     <button class="modal-close" data-action="close-modal" aria-label="Close">${icon("close")}</button>
     <div class="modal-head">
       <h2>League connection</h2>
-      <p>Point the dashboard at a league and account. Cookie files stay local â€” the server only reads cookies/&lt;account&gt;.txt.</p>
+      <p>Point the dashboard at a league and account. Cookie files stay local — the server only reads cookies/&lt;account&gt;.txt.</p>
     </div>
     <form id="settingsForm">
       <div class="modal-body">

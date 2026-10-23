@@ -269,7 +269,7 @@ def action_accept(payload):
         "message": (
             "Trade accepted."
             if completed
-            else "Trade accepted â€” awaiting league review/processing."
+            else "Trade accepted — awaiting league review/processing."
         ),
         "result": result,
         "restoreWarning": CONFIG.get("_restore_warning"),
